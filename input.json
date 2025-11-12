@@ -1,0 +1,3996 @@
+{
+  "board": {
+    "boundary": [
+      [
+        124.4,
+        79.01
+      ],
+      [
+        180.4,
+        79.01
+      ],
+      [
+        180.4,
+        134.01
+      ],
+      [
+        124.4,
+        134.01
+      ]
+    ],
+    "layers": [
+      "F.Cu",
+      "In1.Cu",
+      "In2.Cu",
+      "B.Cu"
+    ]
+  },
+  "rules": {
+    "grid_step": 0.1,
+    "clearance": 0.2,
+    "trace_width": 0.2,
+    "via_size": 0.6,
+    "via_drill": 0.3,
+    "via_cost": 20,
+    "board_clearance": 0.4,
+    "via_clearance_extra": 0.08,
+    "pad_clearance_extra": 0.12,
+    "pad_opener_safety": 0.05,
+    "trace_clearance_extra": 0.1,
+    "default_netclass": "Default",
+    "netclasses": {
+      "Default": {
+        "trace_width": 0.2,
+        "clearance": 0.2,
+        "via_size": 0.6,
+        "via_drill": 0.3,
+        "via_cost": 10,
+        "min_via_from_pads": 0.2,
+        "reuse_same_net_via": false
+      },
+      "POWER": {
+        "trace_width": 0.2,
+        "clearance": 0.2,
+        "via_size": 0.6,
+        "via_drill": 0.3,
+        "via_cost": 10,
+        "min_via_from_pads": 0.2,
+        "reuse_same_net_via": false
+      },
+      "SWITCH": {
+        "trace_width": 0.2,
+        "clearance": 0.2,
+        "via_size": 0.6,
+        "via_drill": 0.3,
+        "via_cost": 10,
+        "min_via_from_pads": 0.2,
+        "reuse_same_net_via": false
+      },
+      "FEEDBACK": {
+        "trace_width": 0.2,
+        "clearance": 0.2,
+        "via_cost": 10,
+        "min_via_from_pads": 0.2,
+        "reuse_same_net_via": false
+      }
+    },
+    "net_to_class": {
+      "+3V3": "Default",
+      "1": "Default",
+      "GND": "POWER",
+      "2": "POWER",
+      "+5V": "Default",
+      "3": "Default",
+      "+1V2": "Default",
+      "4": "Default",
+      "Net-(U3-XTAL1)": "Default",
+      "5": "Default",
+      "Net-(C8-Pad2)": "Default",
+      "6": "Default",
+      "Net-(D1-A)": "Default",
+      "7": "Default",
+      "Net-(FB1-Pad1)": "FEEDBACK",
+      "8": "FEEDBACK",
+      "Net-(J1-Pin_1)": "Default",
+      "9": "Default",
+      "Net-(J1-Pin_5)": "Default",
+      "10": "Default",
+      "Net-(J1-Pin_6)": "Default",
+      "11": "Default",
+      "Net-(J1-Pin_3)": "Default",
+      "12": "Default",
+      "Net-(J1-Pin_2)": "Default",
+      "13": "Default",
+      "Net-(J1-Pin_4)": "Default",
+      "14": "Default",
+      "Net-(J3-Pin_2)": "Default",
+      "15": "Default",
+      "Net-(U1-EN)": "Default",
+      "16": "Default",
+      "Net-(U2-EN)": "Default",
+      "17": "Default",
+      "Net-(U3-PA0)": "Default",
+      "18": "Default",
+      "Net-(U3-PA1)": "Default",
+      "19": "Default",
+      "Net-(U3-PA2)": "Default",
+      "20": "Default",
+      "Net-(U3-PA3)": "Default",
+      "21": "Default",
+      "Net-(U3-PA4)": "Default",
+      "22": "Default",
+      "Net-(U3-PA5)": "Default",
+      "23": "Default",
+      "Net-(U3-~{RESET})": "Default",
+      "24": "Default",
+      "unconnected-(U1-NC-Pad4)": "Default",
+      "25": "Default",
+      "unconnected-(U2-NC-Pad4)": "Default",
+      "26": "Default",
+      "unconnected-(U3-PB1-Pad2)": "Default",
+      "27": "Default",
+      "unconnected-(U3-PC2-Pad24)": "Default",
+      "28": "Default",
+      "unconnected-(U3-PC6-Pad28)": "Default",
+      "29": "Default",
+      "unconnected-(U3-PB3-Pad4)": "Default",
+      "30": "Default",
+      "unconnected-(U3-PD4-Pad18)": "Default",
+      "31": "Default",
+      "unconnected-(U3-PC3-Pad25)": "Default",
+      "32": "Default",
+      "unconnected-(U3-PB4-Pad5)": "Default",
+      "33": "Default",
+      "unconnected-(U3-PB7-Pad8)": "Default",
+      "34": "Default",
+      "unconnected-(U3-PC1-Pad23)": "Default",
+      "35": "Default",
+      "unconnected-(U3-PC5-Pad27)": "Default",
+      "36": "Default",
+      "unconnected-(U3-PC4-Pad26)": "Default",
+      "37": "Default",
+      "unconnected-(U3-PB5-Pad6)": "Default",
+      "38": "Default",
+      "unconnected-(U3-PD0-Pad14)": "Default",
+      "39": "Default",
+      "unconnected-(U3-PD6-Pad20)": "Default",
+      "40": "Default",
+      "unconnected-(U3-PB6-Pad7)": "Default",
+      "41": "Default",
+      "unconnected-(U3-PD2-Pad16)": "Default",
+      "42": "Default",
+      "unconnected-(U3-PD1-Pad15)": "Default",
+      "43": "Default",
+      "unconnected-(U3-PD5-Pad19)": "Default",
+      "44": "Default",
+      "unconnected-(U3-PB0-Pad1)": "Default",
+      "45": "Default",
+      "unconnected-(U3-PC0-Pad22)": "Default",
+      "46": "Default",
+      "unconnected-(U3-PC7-Pad29)": "Default",
+      "47": "Default",
+      "unconnected-(U3-PD3-Pad17)": "Default",
+      "48": "Default",
+      "unconnected-(U3-XTAL2-Pad12)": "Default",
+      "49": "Default",
+      "unconnected-(U3-PD7-Pad21)": "Default",
+      "50": "Default",
+      "unconnected-(U3-AREF-Pad32)": "Default",
+      "51": "Default",
+      "unconnected-(U3-PB2-Pad3)": "Default",
+      "52": "Default",
+      "+1V8": "Default",
+      "53": "Default",
+      "Net-(U4-EN)": "Default",
+      "54": "Default",
+      "unconnected-(U4-NC-Pad4)": "Default",
+      "55": "Default"
+    }
+  },
+  "obstacles": [
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 135.7625,
+      "y": 87.08,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 135.7625,
+      "y": 88.04,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 176.0,
+      "y": 108.34,
+      "layer": "*.Cu",
+      "net_id": 9,
+      "net": "Net-(J1-Pin_1)",
+      "size_x": 2.4,
+      "size_y": 2.4,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 1.4
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 176.0,
+      "y": 104.38000000000001,
+      "layer": "*.Cu",
+      "net_id": 13,
+      "net": "Net-(J1-Pin_2)",
+      "size_x": 2.4,
+      "size_y": 2.4,
+      "shape": "circle",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 1.4
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 176.0,
+      "y": 100.42,
+      "layer": "*.Cu",
+      "net_id": 12,
+      "net": "Net-(J1-Pin_3)",
+      "size_x": 2.4,
+      "size_y": 2.4,
+      "shape": "circle",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 1.4
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 176.0,
+      "y": 96.46000000000001,
+      "layer": "*.Cu",
+      "net_id": 14,
+      "net": "Net-(J1-Pin_4)",
+      "size_x": 2.4,
+      "size_y": 2.4,
+      "shape": "circle",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 1.4
+    },
+    {
+      "type": "pad",
+      "pad_name": "5",
+      "x": 176.0,
+      "y": 92.5,
+      "layer": "*.Cu",
+      "net_id": 10,
+      "net": "Net-(J1-Pin_5)",
+      "size_x": 2.4,
+      "size_y": 2.4,
+      "shape": "circle",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 1.4
+    },
+    {
+      "type": "pad",
+      "pad_name": "6",
+      "x": 176.0,
+      "y": 88.54,
+      "layer": "*.Cu",
+      "net_id": 11,
+      "net": "Net-(J1-Pin_6)",
+      "size_x": 2.4,
+      "size_y": 2.4,
+      "shape": "circle",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 1.4
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 127.9,
+      "y": 82.51,
+      "layer": "*.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 2.6,
+      "size_y": 2.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 2.2
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 127.9,
+      "y": 82.51,
+      "layer": "F.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 127.9,
+      "y": 82.51,
+      "layer": "B.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 146.9,
+      "y": 101.00999999999999,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 146.9,
+      "y": 102.03,
+      "layer": "F.Cu",
+      "net_id": 24,
+      "net": "Net-(U3-~{RESET})",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 135.7725,
+      "y": 90.08,
+      "layer": "F.Cu",
+      "net_id": 17,
+      "net": "Net-(U2-EN)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 135.7725,
+      "y": 89.05999999999999,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 167.0,
+      "y": 93.5,
+      "layer": "F.Cu",
+      "net_id": 23,
+      "net": "Net-(U3-PA5)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.01999999999998,
+      "y": 93.5,
+      "layer": "F.Cu",
+      "net_id": 9,
+      "net": "Net-(J1-Pin_1)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 136.24249999999998,
+      "y": 85.56,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 135.2825,
+      "y": 85.56,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 134.5,
+      "y": 125.0,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 134.5,
+      "y": 126.02000000000001,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 136.0,
+      "y": 126.97999999999999,
+      "layer": "F.Cu",
+      "net_id": 54,
+      "net": "Net-(U4-EN)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 136.0,
+      "y": 128.0,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.0,
+      "y": 82.0,
+      "layer": "*.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 2.6,
+      "size_y": 2.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 2.2
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.0,
+      "y": 82.0,
+      "layer": "F.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.0,
+      "y": 82.0,
+      "layer": "B.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 131.9,
+      "y": 99.01,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.5,
+      "size_y": 2.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 128.9,
+      "y": 99.01,
+      "layer": "F.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 1.5,
+      "size_y": 2.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 168.5,
+      "y": 102.77,
+      "layer": "*.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.8,
+      "size_y": 1.8,
+      "shape": "rect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 0.9
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.5,
+      "y": 100.22999999999999,
+      "layer": "*.Cu",
+      "net_id": 7,
+      "net": "Net-(D1-A)",
+      "size_x": 1.8,
+      "size_y": 1.8,
+      "shape": "circle",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 0.9
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 128.4,
+      "y": 130.01,
+      "layer": "*.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 2.6,
+      "size_y": 2.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 2.2
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 128.4,
+      "y": 130.01,
+      "layer": "F.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 128.4,
+      "y": 130.01,
+      "layer": "B.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 138.2525,
+      "y": 86.06,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 139.27249999999998,
+      "y": 86.06,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 136.0,
+      "y": 125.02,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 136.0,
+      "y": 125.98,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 143.7625,
+      "y": 87.58,
+      "layer": "F.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 143.7625,
+      "y": 88.54,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 167.0,
+      "y": 85.51,
+      "layer": "F.Cu",
+      "net_id": 19,
+      "net": "Net-(U3-PA1)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.01999999999998,
+      "y": 85.51,
+      "layer": "F.Cu",
+      "net_id": 10,
+      "net": "Net-(J1-Pin_5)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 139.125,
+      "y": 87.61,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 139.125,
+      "y": 88.56,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 139.125,
+      "y": 89.51,
+      "layer": "F.Cu",
+      "net_id": 17,
+      "net": "Net-(U2-EN)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 141.39999999999998,
+      "y": 89.51,
+      "layer": "F.Cu",
+      "net_id": 26,
+      "net": "unconnected-(U2-NC-Pad4)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "5",
+      "x": 141.39999999999998,
+      "y": 87.61,
+      "layer": "F.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 146.4,
+      "y": 105.53,
+      "layer": "F.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 146.4,
+      "y": 106.49000000000001,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 175.4,
+      "y": 117.0,
+      "layer": "*.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 1.2,
+      "size_y": 1.8,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 175.4,
+      "y": 115.0,
+      "layer": "*.Cu",
+      "net_id": 15,
+      "net": "Net-(J3-Pin_2)",
+      "size_x": 1.2,
+      "size_y": 1.8,
+      "shape": "oval",
+      "pad_rotation": 90.0,
+      "abs_rotation": 90.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 140.2,
+      "y": 117.8,
+      "layer": "F.Cu",
+      "net_id": 6,
+      "net": "Net-(C8-Pad2)",
+      "size_x": 1.8,
+      "size_y": 1.4,
+      "shape": "rect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 135.8,
+      "y": 117.8,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.8,
+      "size_y": 1.4,
+      "shape": "rect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 135.8,
+      "y": 120.2,
+      "layer": "F.Cu",
+      "net_id": 5,
+      "net": "Net-(U3-XTAL1)",
+      "size_x": 1.8,
+      "size_y": 1.4,
+      "shape": "rect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 140.2,
+      "y": 120.2,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.8,
+      "size_y": 1.4,
+      "shape": "rect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 145.4,
+      "y": 120.49000000000001,
+      "layer": "F.Cu",
+      "net_id": 5,
+      "net": "Net-(U3-XTAL1)",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 145.4,
+      "y": 119.53,
+      "layer": "F.Cu",
+      "net_id": 6,
+      "net": "Net-(C8-Pad2)",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 137.52,
+      "y": 123.5,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 138.48,
+      "y": 123.5,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 129.5,
+      "y": 119.5,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.5,
+      "size_y": 2.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 126.5,
+      "y": 119.5,
+      "layer": "F.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 1.5,
+      "size_y": 2.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.5,
+      "y": 130.5,
+      "layer": "*.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 2.6,
+      "size_y": 2.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 2.2
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.5,
+      "y": 130.5,
+      "layer": "F.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.5,
+      "y": 130.5,
+      "layer": "B.Cu",
+      "net_id": null,
+      "net": null,
+      "size_x": 3.8,
+      "size_y": 3.8,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 142.5,
+      "y": 125.52,
+      "layer": "F.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 142.5,
+      "y": 126.48,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 149.0,
+      "y": 82.48,
+      "layer": "*.Cu",
+      "net_id": 45,
+      "net": "unconnected-(U3-PB0-Pad1)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 149.0,
+      "y": 85.02000000000001,
+      "layer": "*.Cu",
+      "net_id": 27,
+      "net": "unconnected-(U3-PB1-Pad2)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 149.0,
+      "y": 87.56,
+      "layer": "*.Cu",
+      "net_id": 52,
+      "net": "unconnected-(U3-PB2-Pad3)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 149.0,
+      "y": 90.10000000000001,
+      "layer": "*.Cu",
+      "net_id": 30,
+      "net": "unconnected-(U3-PB3-Pad4)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "5",
+      "x": 149.0,
+      "y": 92.64,
+      "layer": "*.Cu",
+      "net_id": 33,
+      "net": "unconnected-(U3-PB4-Pad5)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "6",
+      "x": 149.0,
+      "y": 95.18,
+      "layer": "*.Cu",
+      "net_id": 38,
+      "net": "unconnected-(U3-PB5-Pad6)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "7",
+      "x": 149.0,
+      "y": 97.72,
+      "layer": "*.Cu",
+      "net_id": 41,
+      "net": "unconnected-(U3-PB6-Pad7)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "8",
+      "x": 149.0,
+      "y": 100.26,
+      "layer": "*.Cu",
+      "net_id": 34,
+      "net": "unconnected-(U3-PB7-Pad8)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "9",
+      "x": 149.0,
+      "y": 102.80000000000001,
+      "layer": "*.Cu",
+      "net_id": 24,
+      "net": "Net-(U3-~{RESET})",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "10",
+      "x": 149.0,
+      "y": 105.34,
+      "layer": "*.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "11",
+      "x": 149.0,
+      "y": 107.88,
+      "layer": "*.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "12",
+      "x": 149.0,
+      "y": 110.42,
+      "layer": "*.Cu",
+      "net_id": 49,
+      "net": "unconnected-(U3-XTAL2-Pad12)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "13",
+      "x": 149.0,
+      "y": 112.96000000000001,
+      "layer": "*.Cu",
+      "net_id": 5,
+      "net": "Net-(U3-XTAL1)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "14",
+      "x": 149.0,
+      "y": 115.5,
+      "layer": "*.Cu",
+      "net_id": 39,
+      "net": "unconnected-(U3-PD0-Pad14)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "15",
+      "x": 149.0,
+      "y": 118.04,
+      "layer": "*.Cu",
+      "net_id": 43,
+      "net": "unconnected-(U3-PD1-Pad15)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "16",
+      "x": 149.0,
+      "y": 120.58000000000001,
+      "layer": "*.Cu",
+      "net_id": 42,
+      "net": "unconnected-(U3-PD2-Pad16)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "17",
+      "x": 149.0,
+      "y": 123.12,
+      "layer": "*.Cu",
+      "net_id": 48,
+      "net": "unconnected-(U3-PD3-Pad17)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "18",
+      "x": 149.0,
+      "y": 125.66,
+      "layer": "*.Cu",
+      "net_id": 31,
+      "net": "unconnected-(U3-PD4-Pad18)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "19",
+      "x": 149.0,
+      "y": 128.2,
+      "layer": "*.Cu",
+      "net_id": 44,
+      "net": "unconnected-(U3-PD5-Pad19)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "20",
+      "x": 149.0,
+      "y": 130.74,
+      "layer": "*.Cu",
+      "net_id": 40,
+      "net": "unconnected-(U3-PD6-Pad20)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "21",
+      "x": 164.24,
+      "y": 130.74,
+      "layer": "*.Cu",
+      "net_id": 50,
+      "net": "unconnected-(U3-PD7-Pad21)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "22",
+      "x": 164.24,
+      "y": 128.2,
+      "layer": "*.Cu",
+      "net_id": 46,
+      "net": "unconnected-(U3-PC0-Pad22)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "23",
+      "x": 164.24,
+      "y": 125.66,
+      "layer": "*.Cu",
+      "net_id": 35,
+      "net": "unconnected-(U3-PC1-Pad23)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "24",
+      "x": 164.24,
+      "y": 123.12,
+      "layer": "*.Cu",
+      "net_id": 28,
+      "net": "unconnected-(U3-PC2-Pad24)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "25",
+      "x": 164.24,
+      "y": 120.58000000000001,
+      "layer": "*.Cu",
+      "net_id": 32,
+      "net": "unconnected-(U3-PC3-Pad25)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "26",
+      "x": 164.24,
+      "y": 118.04,
+      "layer": "*.Cu",
+      "net_id": 37,
+      "net": "unconnected-(U3-PC4-Pad26)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "27",
+      "x": 164.24,
+      "y": 115.5,
+      "layer": "*.Cu",
+      "net_id": 36,
+      "net": "unconnected-(U3-PC5-Pad27)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "28",
+      "x": 164.24,
+      "y": 112.96000000000001,
+      "layer": "*.Cu",
+      "net_id": 29,
+      "net": "unconnected-(U3-PC6-Pad28)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "29",
+      "x": 164.24,
+      "y": 110.42,
+      "layer": "*.Cu",
+      "net_id": 47,
+      "net": "unconnected-(U3-PC7-Pad29)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "30",
+      "x": 164.24,
+      "y": 107.88,
+      "layer": "*.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "31",
+      "x": 164.24,
+      "y": 105.34,
+      "layer": "*.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "32",
+      "x": 164.24,
+      "y": 102.80000000000001,
+      "layer": "*.Cu",
+      "net_id": 51,
+      "net": "unconnected-(U3-AREF-Pad32)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "33",
+      "x": 164.24,
+      "y": 100.26,
+      "layer": "*.Cu",
+      "net_id": 7,
+      "net": "Net-(D1-A)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "34",
+      "x": 164.24,
+      "y": 97.72,
+      "layer": "*.Cu",
+      "net_id": 15,
+      "net": "Net-(J3-Pin_2)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "35",
+      "x": 164.24,
+      "y": 95.18,
+      "layer": "*.Cu",
+      "net_id": 23,
+      "net": "Net-(U3-PA5)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "36",
+      "x": 164.24,
+      "y": 92.64,
+      "layer": "*.Cu",
+      "net_id": 22,
+      "net": "Net-(U3-PA4)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "37",
+      "x": 164.24,
+      "y": 90.10000000000001,
+      "layer": "*.Cu",
+      "net_id": 21,
+      "net": "Net-(U3-PA3)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "38",
+      "x": 164.24,
+      "y": 87.56,
+      "layer": "*.Cu",
+      "net_id": 20,
+      "net": "Net-(U3-PA2)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "39",
+      "x": 164.24,
+      "y": 85.02000000000001,
+      "layer": "*.Cu",
+      "net_id": 19,
+      "net": "Net-(U3-PA1)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "40",
+      "x": 164.24,
+      "y": 82.48,
+      "layer": "*.Cu",
+      "net_id": 18,
+      "net": "Net-(U3-PA0)",
+      "size_x": 1.6,
+      "size_y": 1.6,
+      "shape": "circle",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": 0.8
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 167.0,
+      "y": 91.51,
+      "layer": "F.Cu",
+      "net_id": 22,
+      "net": "Net-(U3-PA4)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.01999999999998,
+      "y": 91.51,
+      "layer": "F.Cu",
+      "net_id": 13,
+      "net": "Net-(J1-Pin_2)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 138.22500000000002,
+      "y": 125.1,
+      "layer": "F.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 138.22500000000002,
+      "y": 126.05,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 138.22500000000002,
+      "y": 127.0,
+      "layer": "F.Cu",
+      "net_id": 54,
+      "net": "Net-(U4-EN)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 140.5,
+      "y": 127.0,
+      "layer": "F.Cu",
+      "net_id": 55,
+      "net": "unconnected-(U4-NC-Pad4)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "5",
+      "x": 140.5,
+      "y": 125.1,
+      "layer": "F.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 167.0,
+      "y": 89.49,
+      "layer": "F.Cu",
+      "net_id": 21,
+      "net": "Net-(U3-PA3)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.01999999999998,
+      "y": 89.49,
+      "layer": "F.Cu",
+      "net_id": 12,
+      "net": "Net-(J1-Pin_3)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 167.0,
+      "y": 87.5,
+      "layer": "F.Cu",
+      "net_id": 20,
+      "net": "Net-(U3-PA2)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.01999999999998,
+      "y": 87.5,
+      "layer": "F.Cu",
+      "net_id": 14,
+      "net": "Net-(J1-Pin_4)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 167.0,
+      "y": 83.52,
+      "layer": "F.Cu",
+      "net_id": 18,
+      "net": "Net-(U3-PA0)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.01999999999998,
+      "y": 83.52,
+      "layer": "F.Cu",
+      "net_id": 11,
+      "net": "Net-(J1-Pin_6)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 166.9,
+      "y": 107.51,
+      "layer": "F.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 166.9,
+      "y": 106.55,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 90.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 144.0,
+      "y": 125.49,
+      "layer": "F.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 144.0,
+      "y": 126.51,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 142.2525,
+      "y": 86.06,
+      "layer": "F.Cu",
+      "net_id": 4,
+      "net": "+1V2",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 143.27249999999998,
+      "y": 86.06,
+      "layer": "F.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 173.5,
+      "y": 122.6,
+      "layer": "B.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 173.5,
+      "y": 123.55,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 173.5,
+      "y": 124.5,
+      "layer": "B.Cu",
+      "net_id": 54,
+      "net": "Net-(U4-EN)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 171.22500000000002,
+      "y": 124.5,
+      "layer": "B.Cu",
+      "net_id": 55,
+      "net": "unconnected-(U4-NC-Pad4)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "5",
+      "x": 171.22500000000002,
+      "y": 122.6,
+      "layer": "B.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 131.4,
+      "y": 92.97999999999999,
+      "layer": "B.Cu",
+      "net_id": 3,
+      "net": "+5V",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 131.4,
+      "y": 93.94,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 140.9,
+      "y": 93.44999999999999,
+      "layer": "B.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 140.9,
+      "y": 94.47,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 136.0375,
+      "y": 93.00999999999999,
+      "layer": "B.Cu",
+      "net_id": 3,
+      "net": "+5V",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 136.0375,
+      "y": 93.96,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "3",
+      "x": 136.0375,
+      "y": 94.91,
+      "layer": "B.Cu",
+      "net_id": 16,
+      "net": "Net-(U1-EN)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "4",
+      "x": 133.76250000000002,
+      "y": 94.91,
+      "layer": "B.Cu",
+      "net_id": 25,
+      "net": "unconnected-(U1-NC-Pad4)",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "5",
+      "x": 133.76250000000002,
+      "y": 93.00999999999999,
+      "layer": "B.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 1.325,
+      "size_y": 0.6,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.0,
+      "y": 124.5,
+      "layer": "B.Cu",
+      "net_id": 54,
+      "net": "Net-(U4-EN)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 177.0,
+      "y": 125.52000000000001,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 132.91,
+      "y": 90.96,
+      "layer": "B.Cu",
+      "net_id": 3,
+      "net": "+5V",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 131.89000000000001,
+      "y": 90.96,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 169.5,
+      "y": 122.47999999999999,
+      "layer": "B.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 169.5,
+      "y": 123.5,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 142.65,
+      "y": 99.51,
+      "layer": "B.Cu",
+      "net_id": 8,
+      "net": "Net-(FB1-Pad1)",
+      "size_x": 0.95,
+      "size_y": 2.0,
+      "shape": "rect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 140.9,
+      "y": 99.51,
+      "layer": "B.Cu",
+      "net_id": 3,
+      "net": "+5V",
+      "size_x": 0.95,
+      "size_y": 2.0,
+      "shape": "rect",
+      "pad_rotation": 180.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 131.4,
+      "y": 94.94999999999999,
+      "layer": "B.Cu",
+      "net_id": 16,
+      "net": "Net-(U1-EN)",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 131.4,
+      "y": 95.97,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 138.4,
+      "y": 93.47999999999999,
+      "layer": "B.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 138.4,
+      "y": 94.44,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 177.0,
+      "y": 122.53999999999999,
+      "layer": "B.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 177.0,
+      "y": 123.5,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 143.21,
+      "y": 107.5,
+      "layer": "*.Cu",
+      "net_id": 8,
+      "net": "Net-(FB1-Pad1)",
+      "size_x": 2.02,
+      "size_y": 5.02,
+      "shape": "rect",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 138.03,
+      "y": 107.5,
+      "layer": "*.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 2.02,
+      "size_y": 5.02,
+      "shape": "oval",
+      "pad_rotation": 0.0,
+      "abs_rotation": 0.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 168.0,
+      "y": 122.50999999999999,
+      "layer": "B.Cu",
+      "net_id": 53,
+      "net": "+1V8",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 168.0,
+      "y": 123.47,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.56,
+      "size_y": 0.62,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "1",
+      "x": 175.5,
+      "y": 122.52,
+      "layer": "B.Cu",
+      "net_id": 1,
+      "net": "+3V3",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    },
+    {
+      "type": "pad",
+      "pad_name": "2",
+      "x": 175.5,
+      "y": 123.54,
+      "layer": "B.Cu",
+      "net_id": 2,
+      "net": "GND",
+      "size_x": 0.54,
+      "size_y": 0.64,
+      "shape": "roundrect",
+      "pad_rotation": 270.0,
+      "abs_rotation": 180.0,
+      "clearance": 0.2,
+      "drill": null
+    }
+  ],
+  "tasks": [
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 135.7625,
+        "y": 87.08,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 146.9,
+        "y": 101.00999999999999,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 146.9,
+        "y": 101.00999999999999,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 136.24249999999998,
+        "y": 85.56,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 136.24249999999998,
+        "y": 85.56,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 134.5,
+        "y": 125.0,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 134.5,
+        "y": 125.0,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 138.2525,
+        "y": 86.06,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 138.2525,
+        "y": 86.06,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 136.0,
+        "y": 125.02,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 136.0,
+        "y": 125.02,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 139.125,
+        "y": 87.61,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 139.125,
+        "y": 87.61,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 137.52,
+        "y": 123.5,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 137.52,
+        "y": 123.5,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 138.22500000000002,
+        "y": 125.1,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 138.22500000000002,
+        "y": 125.1,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 173.5,
+        "y": 122.6,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 173.5,
+        "y": 122.6,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 140.9,
+        "y": 93.44999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 140.9,
+        "y": 93.44999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 133.76250000000002,
+        "y": 93.00999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 133.76250000000002,
+        "y": 93.00999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 138.4,
+        "y": 93.47999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 138.4,
+        "y": 93.47999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 177.0,
+        "y": 122.53999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+3V3",
+      "net_id": 1,
+      "start": {
+        "x": 177.0,
+        "y": 122.53999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 175.5,
+        "y": 122.52,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 135.7625,
+        "y": 88.04,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 135.7725,
+        "y": 89.05999999999999,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 135.7725,
+        "y": 89.05999999999999,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 135.2825,
+        "y": 85.56,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 135.2825,
+        "y": 85.56,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 134.5,
+        "y": 126.02000000000001,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 134.5,
+        "y": 126.02000000000001,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 136.0,
+        "y": 128.0,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 136.0,
+        "y": 128.0,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 131.9,
+        "y": 99.01,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 131.9,
+        "y": 99.01,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 168.5,
+        "y": 102.77,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 168.5,
+        "y": 102.77,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 139.27249999999998,
+        "y": 86.06,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 139.27249999999998,
+        "y": 86.06,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 136.0,
+        "y": 125.98,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 136.0,
+        "y": 125.98,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 143.7625,
+        "y": 88.54,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 143.7625,
+        "y": 88.54,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 139.125,
+        "y": 88.56,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 139.125,
+        "y": 88.56,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 146.4,
+        "y": 106.49000000000001,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 146.4,
+        "y": 106.49000000000001,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 135.8,
+        "y": 117.8,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 135.8,
+        "y": 117.8,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 140.2,
+        "y": 120.2,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 140.2,
+        "y": 120.2,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 138.48,
+        "y": 123.5,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 138.48,
+        "y": 123.5,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 129.5,
+        "y": 119.5,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 129.5,
+        "y": 119.5,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 142.5,
+        "y": 126.48,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 142.5,
+        "y": 126.48,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 149.0,
+        "y": 107.88,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 149.0,
+        "y": 107.88,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 164.24,
+        "y": 105.34,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 164.24,
+        "y": 105.34,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 138.22500000000002,
+        "y": 126.05,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 138.22500000000002,
+        "y": 126.05,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 166.9,
+        "y": 106.55,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 166.9,
+        "y": 106.55,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 144.0,
+        "y": 126.51,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 144.0,
+        "y": 126.51,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 143.27249999999998,
+        "y": 86.06,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 143.27249999999998,
+        "y": 86.06,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 173.5,
+        "y": 123.55,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 173.5,
+        "y": 123.55,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 131.4,
+        "y": 93.94,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 131.4,
+        "y": 93.94,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 140.9,
+        "y": 94.47,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 140.9,
+        "y": 94.47,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 136.0375,
+        "y": 93.96,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 136.0375,
+        "y": 93.96,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 177.0,
+        "y": 125.52000000000001,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 177.0,
+        "y": 125.52000000000001,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 131.89000000000001,
+        "y": 90.96,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 131.89000000000001,
+        "y": 90.96,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 169.5,
+        "y": 123.5,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 169.5,
+        "y": 123.5,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 131.4,
+        "y": 95.97,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 131.4,
+        "y": 95.97,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 138.4,
+        "y": 94.44,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 138.4,
+        "y": 94.44,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 177.0,
+        "y": 123.5,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 177.0,
+        "y": 123.5,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 138.03,
+        "y": 107.5,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 138.03,
+        "y": 107.5,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.0,
+        "y": 123.47,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "GND",
+      "net_id": 2,
+      "start": {
+        "x": 168.0,
+        "y": 123.47,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 175.5,
+        "y": 123.54,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "Net-(J1-Pin_1)",
+      "net_id": 9,
+      "start": {
+        "x": 176.0,
+        "y": 108.34,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.01999999999998,
+        "y": 93.5,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(J1-Pin_2)",
+      "net_id": 13,
+      "start": {
+        "x": 176.0,
+        "y": 104.38000000000001,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.01999999999998,
+        "y": 91.51,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(J1-Pin_3)",
+      "net_id": 12,
+      "start": {
+        "x": 176.0,
+        "y": 100.42,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.01999999999998,
+        "y": 89.49,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(J1-Pin_4)",
+      "net_id": 14,
+      "start": {
+        "x": 176.0,
+        "y": 96.46000000000001,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.01999999999998,
+        "y": 87.5,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(J1-Pin_5)",
+      "net_id": 10,
+      "start": {
+        "x": 176.0,
+        "y": 92.5,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.01999999999998,
+        "y": 85.51,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(J1-Pin_6)",
+      "net_id": 11,
+      "start": {
+        "x": 176.0,
+        "y": 88.54,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 168.01999999999998,
+        "y": 83.52,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-~{RESET})",
+      "net_id": 24,
+      "start": {
+        "x": 146.9,
+        "y": 102.03,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 149.0,
+        "y": 102.80000000000001,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "Net-(U2-EN)",
+      "net_id": 17,
+      "start": {
+        "x": 135.7725,
+        "y": 90.08,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 139.125,
+        "y": 89.51,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-PA5)",
+      "net_id": 23,
+      "start": {
+        "x": 167.0,
+        "y": 93.5,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 164.24,
+        "y": 95.18,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "Net-(U4-EN)",
+      "net_id": 54,
+      "start": {
+        "x": 136.0,
+        "y": 126.97999999999999,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 138.22500000000002,
+        "y": 127.0,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U4-EN)",
+      "net_id": 54,
+      "start": {
+        "x": 138.22500000000002,
+        "y": 127.0,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 173.5,
+        "y": 124.5,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "Net-(U4-EN)",
+      "net_id": 54,
+      "start": {
+        "x": 173.5,
+        "y": 124.5,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 177.0,
+        "y": 124.5,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 128.9,
+        "y": 99.01,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 143.7625,
+        "y": 87.58,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 143.7625,
+        "y": 87.58,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 141.39999999999998,
+        "y": 87.61,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 141.39999999999998,
+        "y": 87.61,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 146.4,
+        "y": 105.53,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 146.4,
+        "y": 105.53,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 175.4,
+        "y": 117.0,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 175.4,
+        "y": 117.0,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 149.0,
+        "y": 105.34,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 149.0,
+        "y": 105.34,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 164.24,
+        "y": 107.88,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 164.24,
+        "y": 107.88,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 166.9,
+        "y": 107.51,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V2",
+      "net_id": 4,
+      "start": {
+        "x": 166.9,
+        "y": 107.51,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 142.2525,
+        "y": 86.06,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(D1-A)",
+      "net_id": 7,
+      "start": {
+        "x": 168.5,
+        "y": 100.22999999999999,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 164.24,
+        "y": 100.26,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-PA1)",
+      "net_id": 19,
+      "start": {
+        "x": 167.0,
+        "y": 85.51,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 164.24,
+        "y": 85.02000000000001,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "Net-(J3-Pin_2)",
+      "net_id": 15,
+      "start": {
+        "x": 175.4,
+        "y": 115.0,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 164.24,
+        "y": 97.72,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "Net-(C8-Pad2)",
+      "net_id": 6,
+      "start": {
+        "x": 140.2,
+        "y": 117.8,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 145.4,
+        "y": 119.53,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-XTAL1)",
+      "net_id": 5,
+      "start": {
+        "x": 135.8,
+        "y": 120.2,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 145.4,
+        "y": 120.49000000000001,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-XTAL1)",
+      "net_id": 5,
+      "start": {
+        "x": 145.4,
+        "y": 120.49000000000001,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 149.0,
+        "y": 112.96000000000001,
+        "layer": "*.Cu"
+      }
+    },
+    {
+      "net": "+1V8",
+      "net_id": 53,
+      "start": {
+        "x": 126.5,
+        "y": 119.5,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 142.5,
+        "y": 125.52,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V8",
+      "net_id": 53,
+      "start": {
+        "x": 142.5,
+        "y": 125.52,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 140.5,
+        "y": 125.1,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V8",
+      "net_id": 53,
+      "start": {
+        "x": 140.5,
+        "y": 125.1,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 144.0,
+        "y": 125.49,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "+1V8",
+      "net_id": 53,
+      "start": {
+        "x": 144.0,
+        "y": 125.49,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 171.22500000000002,
+        "y": 122.6,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+1V8",
+      "net_id": 53,
+      "start": {
+        "x": 171.22500000000002,
+        "y": 122.6,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 169.5,
+        "y": 122.47999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+1V8",
+      "net_id": 53,
+      "start": {
+        "x": 169.5,
+        "y": 122.47999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 168.0,
+        "y": 122.50999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-PA4)",
+      "net_id": 22,
+      "start": {
+        "x": 164.24,
+        "y": 92.64,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 167.0,
+        "y": 91.51,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-PA3)",
+      "net_id": 21,
+      "start": {
+        "x": 164.24,
+        "y": 90.10000000000001,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 167.0,
+        "y": 89.49,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-PA2)",
+      "net_id": 20,
+      "start": {
+        "x": 164.24,
+        "y": 87.56,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 167.0,
+        "y": 87.5,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "Net-(U3-PA0)",
+      "net_id": 18,
+      "start": {
+        "x": 164.24,
+        "y": 82.48,
+        "layer": "*.Cu"
+      },
+      "goal": {
+        "x": 167.0,
+        "y": 83.52,
+        "layer": "F.Cu"
+      }
+    },
+    {
+      "net": "unconnected-(U4-NC-Pad4)",
+      "net_id": 55,
+      "start": {
+        "x": 140.5,
+        "y": 127.0,
+        "layer": "F.Cu"
+      },
+      "goal": {
+        "x": 171.22500000000002,
+        "y": 124.5,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+5V",
+      "net_id": 3,
+      "start": {
+        "x": 131.4,
+        "y": 92.97999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 136.0375,
+        "y": 93.00999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+5V",
+      "net_id": 3,
+      "start": {
+        "x": 136.0375,
+        "y": 93.00999999999999,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 132.91,
+        "y": 90.96,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "+5V",
+      "net_id": 3,
+      "start": {
+        "x": 132.91,
+        "y": 90.96,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 140.9,
+        "y": 99.51,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "Net-(U1-EN)",
+      "net_id": 16,
+      "start": {
+        "x": 136.0375,
+        "y": 94.91,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 131.4,
+        "y": 94.94999999999999,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "net": "Net-(FB1-Pad1)",
+      "net_id": 8,
+      "start": {
+        "x": 142.65,
+        "y": 99.51,
+        "layer": "B.Cu"
+      },
+      "goal": {
+        "x": 143.21,
+        "y": 107.5,
+        "layer": "*.Cu"
+      }
+    }
+  ]
+}

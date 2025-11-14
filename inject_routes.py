@@ -38,8 +38,12 @@ def _assert_not_same_file(in_path, out_path):
         raise RuntimeError("Output file must be different from input .kicad_pcb")
 
 def json_to_kicad(json_file, pcb_file, out_file):
-    with open(json_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with open(json_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except UnicodeDecodeError:
+        with open(json_file, 'r', encoding='utf-16') as f:
+            data = json.load(f)
 
     # Expect router output with "routes"
     if "routes" not in data or not isinstance(data["routes"], list):
